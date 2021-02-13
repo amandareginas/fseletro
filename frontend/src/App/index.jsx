@@ -1,6 +1,8 @@
-import React from 'react';
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import React, { lazy, Suspense } from 'react';
+import Header from '../components/Header';
+
+const Footer = lazy(() => import('../components/Footer'));
+
 
 const Index = () => {
     return (
@@ -33,7 +35,9 @@ const Index = () => {
                     </div>
                 </section>
             </div>
-            <Footer />
+            <Suspense fallback={<h1 className="text-danger">Carregando rodapé</h1>}>
+                <Footer />
+            </Suspense>
         </div>
     );
 }
