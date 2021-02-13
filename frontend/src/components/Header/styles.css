@@ -1,0 +1,11 @@
+#menu {
+    background-color: #252525;
+}
+
+#texto {
+    color: rgb(233, 233, 233);
+    font-family: muli, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vh;
+}

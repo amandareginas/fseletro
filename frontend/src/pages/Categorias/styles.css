@@ -1,0 +1,12 @@
+#categoria {
+    background-color: #252525;
+}
+
+#categoriax {
+    background-color: #272727;
+    cursor: pointer;
+}
+
+#tamanhocategoria {
+    width: 15vw;
+}
